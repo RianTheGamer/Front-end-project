@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Intro | Rian</title>
+  <link rel="shortcut icon" href="rian_images/rian_shortcutlogo.jpg">
+
+  <style>
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-image: url('rian_images/rick.png');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    /* header functions */
+    .top-container {
+      background-color: #f1f1f1;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .header {
+      padding: 10px 16px;
+      background: #151515;
+      color: #f1f1f1;
+      text-align: center;
+    }
+
+    .content {
+      padding: 16px;
+      color: whitesmoke;
+      font-size: larger;
+    }
+
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+    .sticky + .content {
+      padding-top: 102px;
+    }    
+    /* ! header functions */
+
+    /* Line break modification */
+    br {
+      display: block;
+      margin: 25px 0;
+    }
+    /* ! Line break modification */
+
+    /* Butang functions */
+    .button {
+      display: inline-block;
+      border-radius: 4px;
+      background-color: #047377;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 28px;
+      padding: 20px;
+      width: 200px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+    .button span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+
+    .button span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+
+    .button:hover span {
+      padding-right: 25px;
+    }
+
+    .button:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+    /* ! Butang */
+  
+    p.a {
+      font-family: Arial, Helvetica, sans-serif;
+      color: whitesmoke;
+      text-indent: 8px;
+    }
+
+    .vertical-center {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+
+    div { 
+      padding: 50px;
+      /*border: 1px solid #4CAF50;*/
+    }
+
+  </style>
+</head>
+    
+
+<body>
+  
+  <div class="header" id="myHeader">
+    <a><img class="two" src="rian_images/rian_logo.png" width="200" height="70"></a>
+  </div>
+  <!--header-->
+
+  <div class="vertical-center">
+
+    <div>
+
+      <div class="content">
+        <h1>This is a personal website.</h1>
+        <h1>Welcome!</h1>
+      </div>
+
+      <p class= "a">Rian Iskandar Bin Jasmin</p>
+      <p class= "a">2019212868</p>
+      <p class= "a">CS1104D</p>
+      
+      <br>
+
+      <button class="button" style="vertical-align:middle" onclick="myFunction()"><span>Proceed </span></button>
+
+    </div>
+
+  </div>
+  <!--Contents-->
+
+  
+  <script>
+
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      }
+      
+      else {
+        header.classList.remove("sticky");
+      }
+    }
+
+  </script>
+  <!--Animation-->
+
+  <script>
+    function myFunction() {
+      location.replace("http://localhost/csc264Ass1/home.html")
+    }
+  </script>
+  <!--On click function-->
+
+</body>
+    
+</html> 

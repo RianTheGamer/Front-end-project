@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Interaction | Rian</title>
+	<link rel="shortcut icon" href="rian_images/rian_shortcutlogo.jpg">
+
+	<style>
+		body {
+			margin: 0;
+			font-family: Arial, Helvetica, sans-serif;
+			background-color: #262c3a;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			/*overflow: hidden;*/
+			color: whitesmoke;
+		}
+
+		.header {
+			padding: 10px 16px;
+			background: #151515;
+			color: #f1f1f1;
+			text-align: center;
+		}
+
+		.tableCenter {
+			margin-left: auto;
+			margin-right: auto;
+			table-layout: fixed; 
+    	}
+
+		.center {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 50%;
+			border: 1px solid #dddddd;
+    	}
+	</style>
+    
+</head>
+    
+    
+<body>
+	<div class="header" id="myHeader">
+    	<a><img class="two" src="rian_images/rian_logo.png" width="200" height="70"></a>
+	</div>
+  	<!--header-->	
+
+	<h1 style="text-align: center;">Interaction!</h1>
+	<h3 style="text-align: center;">Let's interact with my page!</h3>
+
+	<div class="center">
+		<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+
+			Name: <input type="text" name="fname">
+			Email: <input type="text" name="femail">
+
+			<br style="margin: 3%;">
+
+			<p>Please select your gender:</p>
+			<input type="radio" id="male" name="gender" value="male">
+			<label for="male">Male</label><br>
+			<input type="radio" id="female" name="gender" value="female">
+			<label for="female">Female</label><br>
+
+			<br style="margin: 3%;">
+
+			<textarea name="message" rows="10" cols="30">Add Your Comments Here</textarea>
+
+			<div style="text-align: left;">
+				<table>
+					<tr>
+						<th style="height: 50%;">what did you like about this site?</th>
+					</tr>
+					<tr>
+						<td><input type="checkbox" id="chkbox1" value="layout"> <label for="chkbox1"> Minimal layout!</label></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" id="chkbox2" value="navigate"> <label for="chkbox2"> Good user interface!</label></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" id="chkbox3" value="content"> <label for="chkbox3"> Epic contents!</label></td>
+					</tr>
+				</table>
+			</div>
+
+			<br>
+
+			<div style="text-align: left;">
+				<label for="rate">Rate my website!</label>
+				<br>
+				<select name="rate" id="rating">
+					<option value="one">One star</option>
+					<option value="two">Two star</option>
+					<option value="three">Three star</option>
+					<option value="four">Four star</option>
+					<option value="five">Five star</option>
+				</select>
+			</div>
+
+			<div style="text-align: left;">
+				<label for="feel">How do you feel currently?</label>
+				<br>
+				<select name="feel" id="feeling">
+					<option value="Happy">Happy :D</option>
+					<option value="Neutral">Neutral :|</option>
+					<option value="Sad">Sad :(</option>
+				</select>
+			</div>
+
+			<br style="margin-top: 10px;">
+
+			<input type="reset" value="Reset" style="margin: 10px;">
+			<input type="submit" value="Submit">
+
+		</form>
+	</div>
+
+
+	<script>
+
+        function validateForm()
+        {
+            var x = document.forms["myForm"]["fname"].value;
+            var y = document.forms["myForm"]["femail"].value;
+            if (x == "" || y == "")
+            {
+                alert("Name and email must be filled out");
+                return false;
+            }
+        }
+        
+    </script>
+	
+
+</body>
+    
+</html> 
+

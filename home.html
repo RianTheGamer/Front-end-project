@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Home | Rian</title>
+  <link rel="shortcut icon" href="rian_images/rian_shortcutlogo.jpg">
+
+  <style>
+
+    .header {
+      padding: 10px 16px;
+      background: #151515;
+      color: #f1f1f1;
+      text-align: center;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #262c3a;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      overflow: hidden;
+      color: whitesmoke;
+    }
+
+    .border {
+      padding: 16px;
+      color: whitesmoke;
+      font-size: larger;
+    }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    td, th {
+        border: 1px solid #262c3a;
+        text-align: left;
+        padding: 8px;
+        }
+
+    tr:nth-child(even) {
+        background-color: #262c3a;
+    }
+
+    .tableCenter {
+        margin-left: auto;
+        margin-right: auto;
+        table-layout: fixed; 
+    }
+
+    * {box-sizing: border-box}
+
+    .container {
+        width: 50%;
+        background-color: #ddd;
+    }
+
+    .skills {
+        text-align: right;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: white;
+    }
+
+    .button_slide {
+        color: #FFF;
+        border: 2px solid #0f9499;
+        border-radius: 0px;
+        padding: 18px 36px;
+        display: inline-block;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        letter-spacing: 1px;
+        cursor: pointer;
+        box-shadow: inset 0 0 0 0 #047377;
+        -webkit-transition: ease-out 0.5s;
+        -moz-transition: ease-out 0.5s;
+        transition: ease-out 0.5s;
+        width: 40%;
+    }
+
+    .slide_right:hover {
+        box-shadow: inset 400px 0 0 0 #0f9499;
+    }
+
+  </style>
+</head>
+    
+
+<body>
+  
+  <div class="header" id="myHeader">
+        <a><img class="two" src="rian_images/rian_logo.png" width="200" height="70"></a>
+  </div>
+  <!--header-->
+
+    <div class="centre">
+      <table class="tableCenter">
+          <tr>
+            <td>
+                <div>
+                    <br style="margin: 2%">
+                    <img src="rian_images/rian_graduation.jpg" alt="myPortrait" style="width: 370px; height:500px;">
+                </div>
+            </td>
+
+            <td style="width: 5%">
+              <br style="margin: 20%;">
+              <div style="border: 1px solid #ffffff; height: 500px; width: 0px; margin-left: 40%">
+              </div>
+            </td>
+
+            <td>
+                <br style="margin: 5%">
+
+                <h1 style="text-align: left;">Home</h1>
+                <h2 style="text-align: left;">What do you wish to explore in my website?</h2   >
+
+                <br style="margin: 5%">
+                    
+                <div>
+                    <div class="button_slide slide_right" onclick="about()" style="text-align: center;">ABOUT ME </div>
+                </div>
+
+                <br>
+                    
+                <div>
+                    <div class="button_slide slide_right" onclick="resume()" style="text-align: center;">RESUME </div>
+                </div>
+
+                <br>
+              
+                <div>
+                   <div class="button_slide slide_right" onclick="interact()" style="text-align: center;">INTERACTION </div>
+                </div>
+
+                <br style="margin: 5%">
+            </td>
+          </tr>
+      </table>
+
+    </div>
+
+    <script>
+        function about() {
+          location.replace("http://localhost/csc264Ass1/about.html")
+        }
+    
+        function resume() {
+          location.replace("http://localhost/csc264Ass1/resume.html")
+        }
+    
+        function interact() {
+          location.replace("http://localhost/csc264Ass1/interaction.html")
+        }
+      </script>
+
+</body>
+    
+</html> 
